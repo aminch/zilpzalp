@@ -34,7 +34,7 @@ enum custom_keycodes {
 // LAYER TAP BEHAVIORS
 #define NUM_ESC LT(_NUM, KC_ESC)
 #define NAV_SPC LT(_NAV, KC_SPC)
-#define SYM_KCN LT(_SYM, KC_N)
+#define SYM_KCN LT(_SYM, KC_BSPC)
 #define FUN_ENT LT(_FUN, KC_ENT)
 // OTHER
 #define KC_MDOT LSFT(RALT(KC_SCLN))
@@ -45,7 +45,7 @@ enum combo_events {
     Q_COMBO,
     Z_COMBO,
     B_COMBO,
-    MINUS_COMBO,
+    N_COMBO,
     SLASH_COMBO,
     SEMI_COMBO,
     QUOT_COMBO,
@@ -57,7 +57,7 @@ const uint16_t PROGMEM capslock_combo[] = {KC_W, KC_O, COMBO_END};
 const uint16_t PROGMEM q_combo[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM z_combo[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM b_combo[] = {KC_C, KC_V, COMBO_END};
-const uint16_t PROGMEM minus_combo[] = {KC_M, KC_COMMA, COMBO_END};
+const uint16_t PROGMEM n_combo[] = {KC_M, KC_COMMA, COMBO_END};
 const uint16_t PROGMEM slash_combo[] = {KC_COMMA, KC_DOT, COMBO_END};
 const uint16_t PROGMEM semi_combo[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM quot_combo[] = {KC_U, KC_I, COMBO_END};
@@ -67,7 +67,7 @@ combo_t key_combos[] = {
     [Q_COMBO] = COMBO(q_combo, KC_Q),
     [Z_COMBO] = COMBO(z_combo, KC_Z),
     [B_COMBO] = COMBO(b_combo, KC_B),
-    [MINUS_COMBO] = COMBO(minus_combo, KC_MINUS),
+    [N_COMBO] = COMBO(n_combo, KC_N),
     [SLASH_COMBO] = COMBO(slash_combo, KC_SLASH),
     [SEMI_COMBO] = COMBO(semi_combo, KC_SCLN),
     [QUOT_COMBO] = COMBO(quot_combo, KC_QUOT),
