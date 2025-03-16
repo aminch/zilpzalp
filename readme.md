@@ -2,7 +2,7 @@
 
 Alternate QMK Firmware for the [zilpzalp](https://github.com/kilipan/zilpzalp) keyboard. 
 
-Original repository: [here](https://github.com/kilipan/qmk-config-zilpzalp)
+Original QMK firmware repository: [here](https://github.com/kilipan/qmk-config-zilpzalp)
 
 # zilpzalp QMK firmware
 *A wonky 28-key split-unibody column-stagger keyboard.*  
