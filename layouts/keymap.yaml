@@ -1,0 +1,38 @@
+layout: {qmk_keyboard: zilpzalp, layout_name: LAYOUT}
+layers:
+  ALPHA:
+  - [W, E, R, T, Y, U, I, O]
+  - [LALT S, LGUI D, LSFT F, RALT G, RALT H, RSFT J, RGUI K, LALT L]
+  - [LCTL A, X, C, V, M, ',', ., RCTL ;]
+  - [NUM ESC, NAV SPC, SYM KCN, FUN ENT]
+  NUM:
+  - ['', '', '', '', +, '7', '8', '9']
+  - [LALT, LGUI, LSFT, '', '-', '4', '5', '6']
+  - [LCTL, '', '', '', '1', '2', '3', /]
+  - ['', '', E, 0]
+  NAV:
+  - ['', '', '', TAB, INS, HOME, BSPC, PGUP]
+  - [LALT, LGUI, LSFT, CAPS LOCK, DEL, END, UP, PGDN]
+  - [LCTL, '', '', '', LEFT, DOWN, RGHT, '']
+  - ['', '', '', '']
+  SYM:
+  - ['`', '"', MDOT, '[', ']', \, '|', <]
+  - ['@', '#', $, (, ), '&', '*', '%']
+  - ['!', '~', '''', _, '-', +, '=', ^]
+  - ['', LSFT, '', '']
+  FUN:
+  - [QK BOOT, '', '', '', F12, F7, F8, F9]
+  - [LALT, LGUI, LSFT, '', F11, F4, F5, F6]
+  - [LCTL, '', '', '', F1, F2, F3, F10]
+  - ['', '', '', '']
+combos:
+  - { p: [0, 1], k: Q, l: [ALPHA] }
+  - { p: [5, 6], k: "\" '", l: [ALPHA] }
+  - { p: [6, 7], k: P, l: [ALPHA] }
+  - { p: [0, 7], k: CAPS_LOCK, l: [ALPHA], a: top, o: 0.5, w: 60}
+  - { p: [10, 13], k: CAPS_WORD, l: [ALPHA], a: top, o: 0.25, w: 60}
+  - { p: [17, 18], k: Z, l: [ALPHA] }
+  - { p: [18, 19], k: B, l: [ALPHA] }
+  - { p: [20, 21], k: N, l: [ALPHA] }
+  - { p: [21, 22], k: "/", l: [ALPHA] }
+  
