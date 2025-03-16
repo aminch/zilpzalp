@@ -48,10 +48,10 @@ enum combo_events {
     N_COMBO,
     SLASH_COMBO,
     SEMI_COMBO,
-    QUOT_COMBO,
-    COMBO_LENGTH
+    QUOT_COMBO
 };
-uint16_t COMBO_LEN = COMBO_LENGTH;
+
+#ifdef COMBO_ENABLE
 const uint16_t PROGMEM capsword_combo[] = {SFT_F, SFT_J, COMBO_END};
 const uint16_t PROGMEM capslock_combo[] = {KC_W, KC_O, COMBO_END};
 const uint16_t PROGMEM q_combo[] = {KC_W, KC_E, COMBO_END};
@@ -61,6 +61,7 @@ const uint16_t PROGMEM n_combo[] = {KC_M, KC_COMMA, COMBO_END};
 const uint16_t PROGMEM slash_combo[] = {KC_COMMA, KC_DOT, COMBO_END};
 const uint16_t PROGMEM semi_combo[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM quot_combo[] = {KC_U, KC_I, COMBO_END};
+
 combo_t key_combos[] = {
     [CAPSWORD_COMBO] = COMBO(capsword_combo, CW_TOGG),
     [CAPSLOCK_COMBO] = COMBO(capslock_combo, KC_CAPS),
@@ -72,6 +73,7 @@ combo_t key_combos[] = {
     [SEMI_COMBO] = COMBO(semi_combo, KC_SCLN),
     [QUOT_COMBO] = COMBO(quot_combo, KC_QUOT),
 };
+#endif // COMBO_ENABLE
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*

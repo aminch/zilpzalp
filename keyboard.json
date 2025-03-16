@@ -7,6 +7,9 @@
     "dynamic_keymap": {
         "layer_count": 8
     },
+    "build": {
+        "lto": false
+    },
     "features": {
         "bootmagic": true,
         "command": false,
@@ -14,7 +17,17 @@
         "extrakey": true,
         "mousekey": true,
         "rgb_matrix": true,
-        "nkro": true
+        "nkro": true,
+        "grave_esc": false,
+        "space_cadet": false,
+        "magic": false,
+        "audio": false,
+        "music": false,
+        "caps_word": true,
+        "combo": true
+    },
+    "combo": {
+        "count": 9
     },
     "matrix_pins": {
         "cols": ["GP26", "GP27", "GP28", "GP29"],
