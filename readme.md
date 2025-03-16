@@ -24,5 +24,6 @@ Flashing for this firmware:
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
 ## Default keymap
-The `default` keymap is set to QWERTY with the `Q`, `Z`, `B`, and `N` keys missing.
-They are reacheable via combos.
+The `default` keymap is set to QWERTY with the `Q`, `Z`, `B`, `P` and `N` keys missing.
+
+They are reachable via combos. See layouts folder.
