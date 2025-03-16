@@ -30,7 +30,7 @@ enum custom_keycodes {
 #define SFT_J MT(MOD_RSFT, KC_J)
 #define GUI_K MT(MOD_RGUI, KC_K)
 #define ALT_L MT(MOD_LALT, KC_L)
-#define CTL_P MT(MOD_RCTL, KC_P)
+#define CTL_SEMI MT(MOD_RCTL, KC_SCLN)
 // LAYER TAP BEHAVIORS
 #define NUM_ESC LT(_NUM, KC_ESC)
 #define NAV_SPC LT(_NAV, KC_SPC)
@@ -47,7 +47,7 @@ enum combo_events {
     B_COMBO,
     N_COMBO,
     SLASH_COMBO,
-    SEMI_COMBO,
+    P_COMBO,
     QUOT_COMBO
 };
 
@@ -59,7 +59,7 @@ const uint16_t PROGMEM z_combo[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM b_combo[] = {KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM n_combo[] = {KC_M, KC_COMMA, COMBO_END};
 const uint16_t PROGMEM slash_combo[] = {KC_COMMA, KC_DOT, COMBO_END};
-const uint16_t PROGMEM semi_combo[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM p_combo[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM quot_combo[] = {KC_U, KC_I, COMBO_END};
 
 combo_t key_combos[] = {
@@ -70,7 +70,7 @@ combo_t key_combos[] = {
     [B_COMBO] = COMBO(b_combo, KC_B),
     [N_COMBO] = COMBO(n_combo, KC_N),
     [SLASH_COMBO] = COMBO(slash_combo, KC_SLASH),
-    [SEMI_COMBO] = COMBO(semi_combo, KC_SCLN),
+    [P_COMBO] = COMBO(p_combo, KC_P),
     [QUOT_COMBO] = COMBO(quot_combo, KC_QUOT),
 };
 #endif // COMBO_ENABLE
@@ -119,7 +119,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ALPHA] = LAYOUT(
                  KC_W,    KC_E,    KC_R,    KC_T,            KC_Y,    KC_U,    KC_I,    KC_O,
                 ALT_S,   GUI_D,   SFT_F,   RALT_G,         RALT_H,   SFT_J,   GUI_K,   ALT_L,
-        CTL_A,   KC_X,    KC_C,    KC_V,                              KC_M, KC_COMM,  KC_DOT,      CTL_P,
+        CTL_A,   KC_X,    KC_C,    KC_V,                              KC_M, KC_COMM,  KC_DOT,      CTL_SEMI,
                                 NUM_ESC, NAV_SPC,         SYM_KCN, FUN_ENT
     ),
     [_NUM] = LAYOUT(
