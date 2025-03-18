@@ -1,5 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "quantum.h"
+#include "keymap_us_international.h"
 
 //// definitions
 // layers
@@ -36,8 +37,7 @@ enum custom_keycodes {
 #define NAV_SPC LT(_NAV, KC_SPC)
 #define SYM_KCN LT(_SYM, KC_BSPC)
 #define FUN_ENT LT(_FUN, KC_ENT)
-// OTHER
-#define KC_MDOT LSFT(RALT(KC_SCLN))
+
 // combos
 enum combo_events {
     CAPSWORD_COMBO,
@@ -135,8 +135,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    _______, _______,        _______, _______
     ),
     [_SYM] = LAYOUT(
-                 KC_GRV,  KC_DQT,  KC_MDOT, KC_LBRC,        KC_RBRC, KC_BSLS, KC_PIPE, KC_LT,
-                  KC_AT,   KC_HASH, KC_DLR,  KC_LPRN,       KC_RPRN, KC_AMPR, KC_ASTR, KC_PERC,
+                 KC_GRV,  KC_DQT,  US_DEG,  KC_LBRC,        KC_RBRC, KC_BSLS, KC_PIPE, KC_LT,
+                  KC_AT,   KC_HASH, KC_DLR, KC_LPRN,        KC_RPRN, KC_AMPR, KC_ASTR, KC_PERC,
        KC_EXLM, KC_TILD, KC_QUOT, KC_UNDS,                           KC_MINS, KC_PLUS, KC_EQL,      KC_CIRC,
                                    _______, KC_LSFT,        _______, _______
     ),
